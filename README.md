@@ -1,3 +1,5 @@
+![Image](https://github.com/user-attachments/assets/c7f78530-c9b9-46a1-b6a9-7f91f81d7071)
+
 # MentiSpammer Script
 
 A Node.js automation tool using [Puppeteer](https://pptr.dev/) to programmatically cast votes on Mentimeter polls. This script creates isolated browser sessions to simulate unique users and bypass basic cookie tracking.
