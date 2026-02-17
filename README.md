@@ -59,10 +59,27 @@ Open `vote.js` and edit the **User Configuration** section at the top:
 
 ```javascript
 // --- User Configuration ---
-const MENTI_URL = 'https://www.menti.com/YOUR_CODE_HERE';
-const CHOICE_SELECTOR = 'input[id="YOUR_TARGET_ID"]';
-const VOTE_COUNT = 10;
+const MENTI_URL = 'https://www.menti.com/YOUR_CODE_HERE'; // <-- menti.com url 
+const CHOICE_SELECTOR = 'input[id="YOUR_TARGET_ID"]'; // <-- ID you found from inspect element
+const VOTE_COUNT = 10; // <-- No. of votes you need 
 // --------------------------
+```
+You can find the ID through inspect element manually and finding the ID related to the your selection or just paste this in to the browser console tab and press enter and all the available IDs will appear
+
+```javascript
+
+// Paste this into the Console to see all IDs
+const options = document.querySelectorAll('input[type="radio"]');
+console.clear();
+console.log('%c Found ' + options.length + ' voting options:', 'font-size: 14px; color: #00ff00; font-weight: bold;');
+
+options.forEach((opt, index) => {
+    // Try to find the text label nearby (this logic attempts to grab the closest text)
+    // Menti structure: Input -> Span -> Div -> Div (sibling) -> Text
+    let label = "Option " + (index + 1); 
+    console.log(`${label} | ID to copy: "${opt.id}"`);
+});
+
 ```
 
 ---
