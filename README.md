@@ -41,6 +41,14 @@ npm install puppeteer
 
 Create a file named `vote.js` in your project folder and paste your script code into it.
 
+or
+
+```bash
+git clone https://github.com/pamindu-fernando/MentiSpammer.git
+cd MentiSpammer
+
+```
+
 ---
 
 ## ⚙️ Configuration
