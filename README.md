@@ -8,7 +8,7 @@ A Node.js automation tool using [Puppeteer](https://pptr.dev/) to programmatical
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 To run this script, you must have **Node.js** installed on your system.
 
